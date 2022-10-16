@@ -1,0 +1,113 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: yellowgreen;
+  margin: 0;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  margin: 0 auto;
+  background-color: black;
+  width: 80%;
+}
+
+header {
+  grid-area: 1 / span 5;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+header div {
+  height: 10vh;
+  line-height: 10vh;
+  white-space: nowrap;
+}
+
+main {
+  grid-area: 2 / span 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  border: 1px yellowgreen solid;
+  border-left: none;
+  padding: 0.5rem;
+}
+
+aside {
+  grid-area: 2 / span 1;
+  border: 1px yellowgreen solid;
+  border-right: none;
+  padding: 0.5rem;
+}
+
+footer {
+  grid-area: 3 / span 5;
+  height: 10vh;
+  padding: 0.5rem;
+}
+
+footer div {
+  height: 10vh;
+  line-height: 10vh;
+  white-space: nowrap;
+  text-align: center;
+}
+
+main > * {
+  margin: 0.5rem;
+}
+
+#input-word,
+#display {
+  min-width: 30%;
+  height: 1.5rem;
+  letter-spacing: 0.5rem;
+  padding: 0.5rem;
+  border: 2px rgba(154, 205, 50, 0.8) solid;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+#input-word,
+#input-guess,
+#display {
+  background-color: rgb(59, 59, 59);
+  outline: none;
+  color: white;
+}
+
+#display {
+  text-align: center;
+  border: 2px rgba(154, 205, 50, 0.8) dotted;
+}
+
+#input-guess {
+  width: 3rem;
+  height: 1.5rem;
+  letter-spacing: 0.5rem;
+  padding: 0.5rem;
+  border: 2px rgba(154, 205, 50, 0.8) solid;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+button {
+  outline: none;
+  border: 2px rgba(154, 205, 50, 0.8) solid;
+  border-radius: 0.25rem;
+  background: rgba(154, 205, 50, 0.8);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+}
+
+#error {
+  color: red;
+}
