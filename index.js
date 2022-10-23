@@ -9,8 +9,6 @@ const submitGuess = document.getElementById("submit-guess");
 const livesElement = document.getElementById("lives");
 const guessesElement = document.getElementById("used-letters");
 
-// new task: objekta konvertuot i klase //
-
 const hangman = {
   theWord: [],
   displayWord: [],
